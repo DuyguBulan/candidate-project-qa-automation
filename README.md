@@ -43,3 +43,31 @@ What we're looking for:
 - You have a clear vision for how to automate (using POM or Screenplay methodology, BDD or TDD best practices, etc.)
 - You know how to get the results you need (knowledge of the framework(s) and libraries chosen, and using their functionality appropriately)
 - Working code is good. Pretty working code is better. Fast, pretty, working code is best.
+
+Project Summary: PART 1
+-In this project, I used Behavior-driven development (BDD) oriented Cucumber using Gherkin language as Testing tools.
+@CucumberOptions() annotation with Cucumber framework. 
+-Step definition classes - where I have my methods to execute
+  feature files.
+-Hook class - that implements my codes which run
+  before and after my tests. (features = "./src/test/resources/features", //path of feature file
+  glue = {"stepdefinitions","hooks"}, //path of step definitions file and hooks class
+  tags = "@run and not @dontRun",
+  dryRun = false //true means, only checks that every step in the Feature File have corresponding code written in Step Definition file or not)
+- I have a runner class - that runs my tests and helps to generate codes for step definition from my feature files. It also contains locations that show where my feature files and
+  StepDefs
+- utilities folder - (Driver class, general utilities. project related
+  utilities).
+  Driver class is designed as Singleton
+  I have configReader -> to read my config.properties file
+
+Project Summary: PART 2
+Test cases can be run individually by changing the "tags" for each test cases or entirely by adding tags = "@Smoke" in the hooks class and also adding to the feature file. 
+we can run test cases by changing the tags for each test cases and to run all the test  we can change the tags = "@Smoke" in the hooks class and in the feature file.
+  
+
+
+Thank you 
+
+Duygu Bulan
+  
