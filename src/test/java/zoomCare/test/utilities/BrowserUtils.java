@@ -391,8 +391,5 @@ public class BrowserUtils {
         select.selectByVisibleText(category);
     }
 
-
-
 }
 
-//

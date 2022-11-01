@@ -65,9 +65,3 @@ Project Summary: PART 2
 Test cases can be run individually by changing the "tags" for each test cases or entirely by adding tags = "@Smoke" in the hooks class and also adding to the feature file. 
 we can run test cases by changing the tags for each test cases and to run all the test  we can change the tags = "@Smoke" in the hooks class and in the feature file.
   
-
-
-Thank you 
-
-Duygu Bulan
-  
